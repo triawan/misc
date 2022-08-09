@@ -15,9 +15,11 @@ class Mahasiswa:
         self.wind = window
         self.wind.title('Aplikasi Biodata Mahasiswa')
 
+        # daftar/isi data baru
         frame = LabelFrame(self.wind, text="daftar")
         frame.grid(row=0, column=0, columnspan=3, pady=20)
 
+        # tampilan label
         Label(frame, text='nim: ').grid(row=1, column=0)
         self.nim = Entry(frame)
         self.nim.focus()
@@ -27,6 +29,7 @@ class Mahasiswa:
         self.nama = Entry(frame)
         self.nama.grid(row=2, column=1)
 
+        # tampilan button
         ttk.Button(frame, text='simpan', command=self.tambah_mahasiswa).grid(row=3, columnspan=2, sticky=W + E)
 
         self.message = Label(text='', fg='red')
@@ -38,6 +41,7 @@ class Mahasiswa:
         self.tree.heading('#0', text='nim', anchor=CENTER)
         self.tree.heading('#1', text='nama', anchor=CENTER)
 
+        # tampilan button hapus dan ubah
         ttk.Button(text='hapus', command=self.hapus_mahasiswa).grid(row=5, column=0, sticky=W + E)
         ttk.Button(text='ubah', command=self.ubah_mahasiswa).grid(row=5, column=1, sticky=W + E)
 
@@ -127,7 +131,8 @@ class Mahasiswa:
 
     def ubah_records(self, nim_baru, nim, nama_baru, nama_sebelumnya):
         print(nim)
-        print(nama_sebelumnya)
+        print(nama_sebelumnya) 
+        # harusnya diberi validasi agar user wajib memberi input data
         self.collection.update_one(
             {'nim': nim},
             {'$set': {'nim': nim_baru, 'nama': nama_baru}}
