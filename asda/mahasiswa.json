@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "62da2861d7f1044eb8fb0208"
+  },
+  "nama": "agus",
+  "ipk": 3.3,
+  "jurusan": "Ilmu Komputer"
+},{
+  "_id": {
+    "$oid": "62da5643b2793b46f6ee342c"
+  },
+  "nama": "sopian alviana",
+  "ipk": 3.9,
+  "jurusan": "Teknik Informatika"
+},{
+  "_id": {
+    "$oid": "62da5643b2793b46f6ee342d"
+  },
+  "nama": "defiana",
+  "ipk": 3.6,
+  "jurusan": "teknik pertanian"
+}]

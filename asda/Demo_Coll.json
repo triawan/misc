@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "62de53b38331ca233510c6a6"
+  },
+  "nama": "ruhul",
+  "usia": 30,
+  "hobi": [
+    "makan",
+    "ngoding",
+    "membaca"
+  ],
+  "nilai": [
+    {
+      "mk": "matematika",
+      "skor": 100
+    },
+    {
+      "mk": "bahasa inggris",
+      "skor": 90
+    },
+    {
+      "mk": "basis data",
+      "skor": 80
+    }
+  ]
+}]
