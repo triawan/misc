@@ -45,8 +45,8 @@ class Mahasiswa:
     
     def run_db(self):
         client = MongoClient(self.mongo_uri)
-        db = client['mahasiswa']
-        self.collection = db['biodata']
+        db = client['mahasiswa'] # buat database dengan nama 'mahasiswa'
+        self.collection = db['biodata'] # buat collection dengan nama 'biodata'
 
     def simpan_mahasiswa(self):
         records = self.tree.get_children()
